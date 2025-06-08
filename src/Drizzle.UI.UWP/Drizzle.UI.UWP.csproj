@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project ToolsVersion="15.0" DefaultTargets="Build"
+  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+    Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -123,7 +125,7 @@
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
     <!--
       Workarounds for ILT0005: Out of memory.
-      https://github.com/CommunityToolkit/Tooling-Windows-Submodule/blob/86db77d8b0736d45e5c5b023745261b7970f475d/ProjectHeads/Head.Uwp.props#L29C18-L29C18
+    https://github.com/CommunityToolkit/Tooling-Windows-Submodule/blob/86db77d8b0736d45e5c5b023745261b7970f475d/ProjectHeads/Head.Uwp.props#L29C18-L29C18
     -->
     <!--<IlcParameters>/ExtraNutcArguments:"/d2threads1"</IlcParameters>
     <SingleThreadNUTC>true</SingleThreadNUTC>
@@ -702,7 +704,8 @@
     <Content Include="Libs\WindowsEx.UI.Core.winmd" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="WindowsEx.UI.Core, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+    <Reference
+      Include="WindowsEx.UI.Core, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Libs\WindowsEx.UI.Core.winmd</HintPath>
     </Reference>
@@ -717,10 +720,12 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="..\Drizzle.UI.Shared\Drizzle.UI.Shared.projitems" Label="Shared" />
-  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+  <PropertyGroup
+    Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import
+    Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -193,6 +193,5 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Drizzle.UI.Shared\Drizzle.UI.Shared.projitems*{08c53c33-ec81-47a1-9f69-7b9bbf708c13}*SharedItemsImports = 5
 		Drizzle.UI.Shared\Drizzle.UI.Shared.projitems*{da7435ff-7175-4a57-a7e4-02abc79a6189}*SharedItemsImports = 13
-		Drizzle.UI.Shared\Drizzle.UI.Shared.projitems*{e585fff2-9a5d-4461-a94b-34fb4f829b15}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal
